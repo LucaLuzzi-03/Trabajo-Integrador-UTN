@@ -1,0 +1,113 @@
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+
+@media (min-width: 768px) and (max-width: 1900px){
+.location{
+    width: 50%;
+}
+
+.contactForm{
+    width: 50%;
+}
+}
+
+@media (max-width: 767px){
+    .contactContainer{
+        flex-direction: column;
+    }
+
+    .location{
+        width: 100%;
+    }
+
+    .contactForm{
+        width: 100%;
+    }
+}
+
+.location{
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.location h3{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+}
+
+.location p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.location span{
+    font-size: 20px;
+    font-weight: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.mapaInfo{
+    padding-top: 30px;
+}
+
+.contactForm h3{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+}
+
+.contactForm label{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 10px;
+    display: block;
+    padding-top: 20px;
+}
+
+.contactForm input{
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+textarea{
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.contactForm{
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding-top:30px ;
+}
+
+.buttons button{
+    height: 40px;
+    width: 90px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.buttons button:hover{
+    transform: scale(1.2);
+
+}
+

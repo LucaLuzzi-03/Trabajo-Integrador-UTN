@@ -1,0 +1,48 @@
+body{
+    background-color: #f1f1f1;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+
+.newArrivals{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(70, 69, 69);
+}
+
+
+.newArrivals::before,
+.newArrivals::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: rgb(175, 175, 175);
+}
+
+.newArrivals::before {
+    left: 23%;
+    transform: translateX(-50%);
+}
+
+.newArrivals::after {
+  right: 23%;
+  transform: translateX(50%);
+}
+
+
+
+
+
