@@ -26,8 +26,9 @@
 
 .info p{
     height: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 10px;
+    font-weight: 800;
 }
 
 .precio p{

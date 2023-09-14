@@ -1,13 +1,13 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import {useNavigate} from 'react-router-dom'
 import "./styles/productCard.css"
 
-export const ProductCard = ({title, image, description, price, id}) => {
+export const ProductCard = ({title, image, price, id, category}) => {
 
     const navigate = useNavigate()
 
     const onHandleNavigate = () => {
-        navigate(`/products/1`)
+        navigate(`/products/${id}`)
     }
 
     
@@ -18,7 +18,8 @@ export const ProductCard = ({title, image, description, price, id}) => {
         <div className='productCard' onClick={onHandleNavigate}> 
             <img style={{width:"200px", height:"200px"}} src={image} alt={title} />
         <div className="textos">
-            <div className='info'> <p>{title} </p></div>
+            <div className='info'> <p className='text-truncate'>{title} </p></div>
+            <p>{category}</p>
             <div className='precio'>
             <p>${price}</p>
             </div>
