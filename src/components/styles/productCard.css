@@ -22,21 +22,32 @@
     border-top: 1px solid rgb(160, 160, 160);
     padding-top: 20px;
     width: 200px;
+    margin-bottom: 0px;
+    
+}
+
+.categoria{
+    padding-left: 10px;
+    border-bottom: 1px dotted  rgb(160, 160, 160);
 }
 
 .info p{
     height: 50px;
     /* overflow: hidden; */
-    padding: 10px;
+    height: 30px;
+    margin-bottom: 0px;
     font-weight: 800;
+    padding-left: 10px;
 }
 
 .precio p{
-    padding: 10px;
+    margin-bottom: 0px;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .envio{
     padding-left: 10px;
+    margin-bottom: 0px;
 }
 
