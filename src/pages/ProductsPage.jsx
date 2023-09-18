@@ -4,6 +4,7 @@ import { ProductCard } from '../components/ProductCard'
 import "./styles/productsPage.css"
 import { Filter } from '../components/Filter'
 import { Search } from '../components/Search'
+import { Pagination } from '../components/Pagination'
 
 
 
@@ -12,6 +13,8 @@ export const ProductsPage = () => {
   const [products, setProducts] = useState([])
   const [productsFiltered, setProductsFiltered] = useState([])
   const [productsCategory, setProductsCategory] = useState("all")
+  const [productsByCategory, setProductsByCategory] = useState([])
+  const [pagination, setPagination] = useState(1)
 
   const getAllProducts = async() => { 
     const response = await fetch("https://fakestoreapi.com/products")
@@ -37,6 +40,10 @@ export const ProductsPage = () => {
   useEffect(() => {
     getProducts()
   }, [])
+
+  useEffect(() => {
+    setProductsByCategory()
+  }, [])
   
   return (
     <>
@@ -58,6 +65,7 @@ export const ProductsPage = () => {
             .map(product =>  <ProductCard key={product.id} {...product}/> )
         }
       </div>
+      <Pagination pagination={ pagination } productsLength= { productsFiltered.length } />
     </>
 )
 }

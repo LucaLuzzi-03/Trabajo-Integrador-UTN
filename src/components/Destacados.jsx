@@ -1,9 +1,14 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
 import { ProductCard } from '../components/ProductCard'
 import "./styles/destacados.css"
+import { useNavigate } from 'react-router-dom'
 
 
 export const Destacados = () => {
+
+  const navigate = useNavigate()
+
   const [products, setProducts] = useState([])
 
   const getAllProducts = async() => { 
@@ -15,7 +20,6 @@ export const Destacados = () => {
   const getProducts = async() => {
     const data = await getAllProducts()
     setProducts(data)
-    setProductsFiltered(data)
   }
 
   useEffect(() => {
@@ -32,7 +36,13 @@ export const Destacados = () => {
     </div>
     <div className="allProducts">
       <div className="botonProduct"> 
-      <button>All Products</button>
+
+      <button
+        onClick={ () => navigate("/products") }
+      >
+        All Products
+      </button>
+      
       </div>
     </div>
     </>

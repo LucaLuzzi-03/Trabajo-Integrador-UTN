@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 import "./styles/search.css"
 
@@ -13,7 +14,7 @@ export const Search = ({ onHandleSearch }) => {
   return (
     <>
       <div className="search-container">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i className="fa-solid fa-magnifying-glass"></i>
         <input 
           type="text"
           value={ inputValue }

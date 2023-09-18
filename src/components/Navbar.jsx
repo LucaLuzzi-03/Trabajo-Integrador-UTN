@@ -6,7 +6,7 @@ export const Navbar = () => {
     <>
     
       <div className="envio d-flex justify-content-center">
-        <p><i class="fa-solid fa-truck"></i>Free shipping on orders over $100</p>
+        <p><i className="fa-solid fa-truck"></i>Free shipping on orders over $100</p>
       </div>
 <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
   <div className="container-fluid">
@@ -17,7 +17,10 @@ export const Navbar = () => {
     <div className="collapse navbar-collapse elementos" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <NavLink className="nav-link active" aria-current="page" to="/"> Products </NavLink>
+          <NavLink className="nav-link" to="/home"> Home </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/products"> Products </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/contact"> Contact </NavLink>
