@@ -5,6 +5,7 @@ h1{
 .allProducts{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 
@@ -33,4 +34,17 @@ h1{
   
   .botonProduct:hover * {
     pointer-events: auto;
+  }
+
+
+  .imgContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .imgContainer img{
+    width: 25%;
   }

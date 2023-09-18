@@ -1,7 +1,8 @@
 import React from 'react'
 import "./styles/carousel.css"
-import banner1 from "../assets/banner1.jpg"
-import banner2 from "../assets/banner2.jpg"
+import banner1 from "../assets/banner1.png"
+import banner2 from "../assets/banner2.png"
+import banner3 from "../assets/banner3.png"
 
 export const Carousel = () => {
   return (
@@ -12,10 +13,10 @@ export const Carousel = () => {
       <img src={banner1} className="d-block carrusel w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src={banner2} className="d-block carrusel2 w-100" alt="..." />
+      <img src={banner2} className="d-block carrusel w-100" alt="..." />
     </div>
     <div className="carousel-item">
-        <img src={banner1} className="d-block carrusel w-100" alt="..." />
+        <img src={banner3} className="d-block carrusel w-100" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

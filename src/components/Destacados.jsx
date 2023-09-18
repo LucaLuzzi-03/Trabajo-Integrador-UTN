@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react'
 import { ProductCard } from '../components/ProductCard'
 import "./styles/destacados.css"
 import { useNavigate } from 'react-router-dom'
+import img1 from "../assets/imagen1.avif"
+import img2 from "../assets/imagen2.avif"
+import img3 from "../assets/imagen3.avif"
 
 
 export const Destacados = () => {
@@ -27,6 +30,11 @@ export const Destacados = () => {
   }, [])
   return (
     <>
+        <div className="imgContainer">
+          <img src={img1} alt="" />
+          <img src={img2} alt="" />
+          <img src={img3} alt="" />
+        </div>
     <h1 className='text-center pt-3 '> Featured products </h1>
     <div className='cardContainer'>
     {

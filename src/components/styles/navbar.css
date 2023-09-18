@@ -2,6 +2,7 @@
     z-index: 1000;
     display: flex;
     background-color: #8a98e9;
+    box-shadow: 0 4px 10px -2px rgb(104, 104, 104);
 }
 
 .elementos{
@@ -11,7 +12,7 @@
 .envio{
     text-align: center;
     height: 35px;
-    background-color: #3f51b5;
+    background-color: #525b8b;
     color: white;
     padding: 5px;
     padding-top: 8px;
