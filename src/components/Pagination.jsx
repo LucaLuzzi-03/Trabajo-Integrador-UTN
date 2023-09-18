@@ -1,14 +1,12 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './styles/pagination.css'
 
-export const Pagination = ({ productsLength }) => {
-
-  const available = productsLength <= 10 ? false : true
-
+export const Pagination = ({ pagination, onHandlePagination }) => {
   return (
     <div>
-      <button disabled={ !available ? true : false } className='btn-pagination'>Prev</button>
-      <button disabled={ !available ? true : false } className='btn-pagination'>Next</button>
+      <button disabled={ pagination === 1 ? true : false } onClick={ () => onHandlePagination(1) } className='btn-pagination'>Prev</button>
+      <button disabled={ pagination === 2 ? true : false } onClick={ () => onHandlePagination(2) } className='btn-pagination'>Next</button>
     </div>
   )
 }

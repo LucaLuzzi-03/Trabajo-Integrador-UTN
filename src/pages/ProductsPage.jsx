@@ -11,9 +11,8 @@ import { Pagination } from '../components/Pagination'
 export const ProductsPage = () => {
 
   const [products, setProducts] = useState([])
-  const [productsFiltered, setProductsFiltered] = useState([])
+  const [productsFiltered, setProductsFiltered] = useState('')
   const [productsCategory, setProductsCategory] = useState("all")
-  const [productsByCategory, setProductsByCategory] = useState([])
   const [pagination, setPagination] = useState(1)
 
   const getAllProducts = async() => { 
@@ -25,7 +24,6 @@ export const ProductsPage = () => {
   const getProducts = async() => {
     const data = await getAllProducts()
     setProducts(data)
-    setProductsFiltered(data)
   }
 
   const handleCategory = ( inputValue ) => {
@@ -33,17 +31,19 @@ export const ProductsPage = () => {
   }
 
   const handleSearch = ( inputValue ) => {
-    setProductsFiltered( products.filter(
-      product => product.title.toLowerCase().includes( inputValue.toLowerCase() )) )
+    setProductsFiltered( inputValue.toLowerCase() )
+  }
+
+  const handlePagination = ( page ) => {
+    setPagination( page )
   }
 
   useEffect(() => {
     getProducts()
   }, [])
 
-  useEffect(() => {
-    setProductsByCategory()
-  }, [])
+  let length = 0
+  let productsPerPage = pagination === 1 ? true : false;
   
   return (
     <>
@@ -57,15 +57,31 @@ export const ProductsPage = () => {
       <div className='borde'></div>
       <div className='cardContainer'> 
         {
-          productsFiltered
+          products
+            .filter( product => {
+              if (productsFiltered.length === 0) return product
+              return product.title.toLowerCase().includes( productsFiltered )
+            })
             .filter( product => {
               if (productsCategory === "all") return product
               return product.category === productsCategory
             })
-            .map(product =>  <ProductCard key={product.id} {...product}/> )
+            .filter((product,i,array) => {
+              length = array.length
+              if (productsPerPage) {
+                if (i + 1 > 10) return
+                return product
+              } else {
+                if (i < 10) return
+                return product
+              }
+            })
+            .map(product =>  {
+              return <ProductCard key={product.id} {...product}/>
+            })
         }
       </div>
-      <Pagination pagination={ pagination } productsLength= { productsFiltered.length } />
+      { length > 10 && <Pagination onHandlePagination={ handlePagination } pagination={ pagination } /> }
     </>
 )
 }
