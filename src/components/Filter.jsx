@@ -9,6 +9,7 @@ export const Filter = ({ onHandleCategory }) => {
 
   return (
     <>
+    <div className="filter">
       <select onChange={ onHandleChange }>
         <option value="all">All</option>
         <option value="electronics">Electronics</option>
@@ -16,6 +17,7 @@ export const Filter = ({ onHandleCategory }) => {
         <option value="men's clothing">Mens clothing</option>
         <option value="women's clothing">Womens clothing</option>
       </select>
+      </div>
     </>
   )
 }

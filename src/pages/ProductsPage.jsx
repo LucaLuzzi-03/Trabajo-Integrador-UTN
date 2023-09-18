@@ -40,12 +40,12 @@ export const ProductsPage = () => {
   
   return (
     <>
-      <h1>Products</h1>
-      <hr/>
+      <div className='inputsxd'>  
       <Search onHandleSearch={ handleSearch } />
       <Filter onHandleCategory={ handleCategory } />
+      </div>
       <div className='newArrivals'> 
-        <h1>New Arrivals</h1> 
+        <h1>Productos</h1> 
       </div>
       <div className='borde'></div>
       <div className='cardContainer'> 

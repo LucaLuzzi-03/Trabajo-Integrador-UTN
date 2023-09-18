@@ -23,7 +23,7 @@ export const ProductCard = ({title, image, price, id, category}) => {
             <div className='precio'>
             <p>${price}</p>
             </div>
-            <div className="envio">
+            <div className="envios">
             <p>Free shiping</p>
             </div>
         </div>

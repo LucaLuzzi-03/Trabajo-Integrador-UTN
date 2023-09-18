@@ -1,0 +1,13 @@
+@media (max-width: 767px){
+    .filter{
+      margin-top: 20px;
+    }
+  }
+
+.filter select{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+    height: 35px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.432);
+    }

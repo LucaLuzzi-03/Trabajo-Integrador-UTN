@@ -1,0 +1,44 @@
+.carrusel{
+    height: 400px;
+}
+
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 4000px){
+    .item:nth-child(-n + 2){
+        padding-right: 80px;
+    }
+
+}
+
+.texto{
+    font-family: 'Lato', sans-serif;
+}
+
+.item i{
+    font-size: 25px;
+    color: gray;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+}
