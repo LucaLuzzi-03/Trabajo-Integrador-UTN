@@ -2,9 +2,18 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #f6f7fa;
 }
 
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/hero.jpg) ;
+    height: 500px;
+}
+
+.hero h1, .herotexto{   
+    text-align: center;
+    margin: 0 auto;
+}
 
 @media (min-width: 768px) and (max-width: 4000px){
 .location{

@@ -3,6 +3,10 @@ import "./styles/contact.css"
 export const Contact = () => {
 return (
     <> 
+    <div className="hero">
+        <h1>Contact Us!</h1>
+        <p className="herotexto">If you have any trouble with you purchase, please contact us so we can resolve your problem ASAP!</p>
+    </div>
     <div className="contactContainer">
         <div className="location">
             <h3>Our place</h3>
