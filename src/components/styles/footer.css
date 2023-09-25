@@ -1,0 +1,17 @@
+.footer {
+    background-color: #2f2c79 !important;
+}
+
+
+.ft-content {
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+
+.lorem {
+    font-size: 18px !important;
+ 
+
+}
