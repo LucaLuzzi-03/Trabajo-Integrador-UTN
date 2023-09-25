@@ -2,9 +2,21 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #f6f7fa;
 }
 
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/hero.jpg) ;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1, .herotexto{   
+    text-align: center;
+    margin: 0 auto;
+}
 
 @media (min-width: 768px) and (max-width: 4000px){
 .location{
@@ -35,10 +47,18 @@
     border: 1px solid black;
 }
 
+.herotextos{
+    color: white;
+}
+
+.hero h1{
+    color: white;
+}
+
 .location h3{
     font-size: 25px;
     font-family: 'Lato', sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .location p{

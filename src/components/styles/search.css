@@ -1,0 +1,30 @@
+.search-container input{
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    height: 35px;
+    width: 250px;
+}
+
+.search-container i{
+    background-color: #ffff;
+    padding: 8px;
+    border-right: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.search-container{
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+@media (max-width: 767px){
+    .search-container{
+      margin-right: 10px;
+      height: 40px;
+      margin-top: 15px;
+    }
+  }
+

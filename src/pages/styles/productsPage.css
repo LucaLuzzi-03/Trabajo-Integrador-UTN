@@ -1,5 +1,5 @@
 body{
-    background-color: #f1f1f1;
+    background-color: #f6f7fa;
 }
 
 .cardContainer{
@@ -8,6 +8,8 @@ body{
     margin: 0 auto;
     font-family: 'Nunito Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
+
+padding: 15px;
 }
 
 
@@ -41,6 +43,15 @@ font-family: 'Work Sans', sans-serif;
   right: 23%;
   transform: translateX(50%);
 }
+
+
+.inputsxd{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 
 
 

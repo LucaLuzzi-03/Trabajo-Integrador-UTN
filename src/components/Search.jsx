@@ -14,7 +14,7 @@ export const Search = ({ onHandleSearch }) => {
   return (
     <>
       <div className="search-container">
-        <i className="bi bi-search"></i>
+        <i className="fa-solid fa-magnifying-glass"></i>
         <input 
           type="text"
           value={ inputValue }

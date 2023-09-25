@@ -1,0 +1,56 @@
+.carrusel {
+    position: relative;
+    z-index: -1;
+}
+
+
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 4000px){
+    .item:nth-child(-n + 2){
+        padding-right: 80px;
+    }
+
+    .carrusel{
+        width: 100%;
+        height: 470px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrusel{
+        width: 100%;
+    }
+}
+
+.texto{
+    font-family: 'Lato', sans-serif;
+}
+
+.item i{
+    font-size: 25px;
+    color: gray;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+}
