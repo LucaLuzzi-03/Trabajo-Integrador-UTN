@@ -105,6 +105,14 @@ textarea{
     border-radius: 5px;
 }
 
+.contactForm input, textarea {
+    padding-left: 10px;
+}
+
+.contactForm textarea{
+    padding-top: 7px;
+}
+
 
 .contactForm{
     padding: 2rem;

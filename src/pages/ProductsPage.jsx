@@ -52,7 +52,7 @@ export const ProductsPage = () => {
       <Filter onHandleCategory={ handleCategory } />
       </div>
       <div className='newArrivals'> 
-        <h1>Productos</h1> 
+        <h1>Products</h1> 
       </div>
       <div className='borde'></div>
       <div className='cardContainer'> 
