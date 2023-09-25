@@ -43,8 +43,15 @@ h1{
     gap: 50px;
     padding-bottom: 30px;
     padding-top: 30px;
+    flex-wrap: wrap;
   }
 
   .imgContainer img{
     width: 25%;
+  }
+
+  @media (max-width: 768px) {
+    .imgContainer img{
+        width: 40%;
+    }
   }
