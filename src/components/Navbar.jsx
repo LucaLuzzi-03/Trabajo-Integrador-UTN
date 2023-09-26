@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "./styles/navbar.css"
+import logo from "../assets/logolol.png"
 
 
 export const Navbar = () => {
@@ -14,11 +15,11 @@ export const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg navbar-dark sticky-top" >
         <div className="container-fluid">
-          <h3>
+          
             <NavLink className="navbar-brand" to="/">
-              TiendaX
+              <img src={logo} alt="" />
             </NavLink>
-          </h3>
+          
           <button
             className="navbar-toggler"
             type="button"

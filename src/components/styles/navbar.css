@@ -10,8 +10,14 @@
     --bs-gutter-x: 0rem;
 }
 
+
+
 .navbar-brand{
-    padding-left: 10px;
+    width: 90px;
+}
+
+.navbar-brand img{
+    width: 110%;
 }
 
 .navbar-nav{

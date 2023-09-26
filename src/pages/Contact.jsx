@@ -15,7 +15,6 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
   };
 
   return (
@@ -54,7 +53,7 @@ export const Contact = () => {
             <label>Message</label>
             <textarea cols="30" rows="10" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
             <div className='buttons'>
-              <button type="submit">Send</button>
+              <button type="submit" onClick={handleCancel}>Send</button>
               <button type="button" onClick={handleCancel}>Cancel</button>
             </div>
           </form>

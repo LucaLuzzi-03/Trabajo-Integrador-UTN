@@ -10,7 +10,7 @@ import pagofacil from "../assets/pagofacilpng.png"
         <footer id="footerlol" className="footer-distributed ">
     
         <div className="footer-left">
-            <h3>Tienda<span>X</span></h3>
+            <h3>X<span>Store</span></h3>
     
             <p className="footer-links">
                 
