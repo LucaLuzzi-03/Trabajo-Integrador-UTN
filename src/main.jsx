@@ -7,5 +7,6 @@ import { Contact } from './pages/Contact.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
+
   </React.StrictMode>,
 )

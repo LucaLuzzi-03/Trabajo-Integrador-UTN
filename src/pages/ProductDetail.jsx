@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 
 import './styles/productDetail.css'
+import { Footer } from "../components/Footer"
 
 
 export const ProductDetail = () => {
@@ -35,11 +36,10 @@ export const ProductDetail = () => {
     
             <div className='productDetail_info-container'>
     
-              <div className='info-container_text'>
-                <strong>{ product.title }</strong>
-                <p>{ product.description }</p>
-                <p>{ product.category }</p>
-                <span>{ `$ ${product.price}` }</span>
+              <div className='info-container-text'>
+                <h4><strong>{ product.title }</strong></h4>
+                <p className="productDescription">{ product.description }</p>
+                <span className="productPrice">{ `$ ${product.price}` }</span>
               </div>
     
               <div className="info-container_buttons">
@@ -51,7 +51,7 @@ export const ProductDetail = () => {
     
           </div>
           )
-      }
+        }
     </>
     )
 }

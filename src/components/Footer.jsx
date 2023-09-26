@@ -1,92 +1,44 @@
 import React from 'react'
 import "./styles/footer.css"
+import visa from "../assets/visa-logo.png"
+import master from "../assets/masterlogo.png"
+import mercadoP from "../assets/mplogo.png"
+import pagofacil from "../assets/pagofacilpng.png"
 
-export const Footer = () => {
-  return (
-
-    <footer className="footer bg-primary bg-lighten-xl text-center text-white">
-
-    <div className="container p-4">
-      
-      <div className="row">
+    export const Footer = () => {
+      return (
+        <footer id="footerlol" className="footer-distributed ">
+    
+        <div className="footer-left">
+            <h3>Tienda<span>X</span></h3>
+    
+            <p className="footer-links">
+                
+                <a className="footer-item">Home</a>
+                |
+                <a className="footer-item">Products</a>
+                |
+                <a className="footer-item">Contact</a>
+            </p>
+    
+            <p className="footer-company-name">Copyright © 2023 All rigths reserved</p>
+        </div>
+    
         
-        <div className="ft-content col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 className="text-uppercase">Footer Content </h5>
-          <p className='lorem'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint! 
-          </p>
+        <div className="footer-right">
+            <p className="footer-company-about" data-section="footer" data-value="call">
+            Xstore is a clothing store located in Wyoming, United States. All use of this page if the use of its authors is totally prohibited.
+            </p>
+            <div className="footer-icons">
+                <h6 className='white'>Payment Methods</h6>
+                <img src={visa} alt="" />
+                <img src={mercadoP} alt="" />
+                <img src={master} alt="" />
+                <img src={pagofacil} alt="" />
+            </div>
         </div>
-      
-        <div className="col-lg-3 col-md-6 mb-4 mb-md-">
-          <h5 className="text-uppercase">Links</h5>
-
-          <ul className="list-unstyled mb-10">
-            <li>
-              <a href="#!" className="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 className="text-uppercase mb-0">Contacto</h5>
-
-          <ul className="list-unstyled">
-            <li>
-              <a href="#!" className="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" className="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
+    </footer>
+      )
+    }
     
-      </div>
-    
-    </div>
-    
-
-    <div className="container p-4 pb-0">
-      <section className="mb-4">
-  
-        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i className="fab fa-facebook-f"></i ></a>
-
-        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i className="fab fa-instagram"></i></a>
-  
-
-        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i className="fab fa-linkedin-in"></i></a>
-  
-        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i className="fab fa-github"></i></a>
-      </section>
-    </div>
- 
-  
-
-    <div className="text-center">
-      © 2023 Copyright:
-    </div>
-      <p className="text-white m-0" >Equipo 1 Fundacion Empujar</p>
-    
-  </footer>
-  )
-}
     
