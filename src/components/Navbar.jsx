@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom"
-import "./styles/navbar.css"
+
 import logo from "../assets/logolol.png"
+import "./styles/navbar.css"
 
 
 export const Navbar = () => {
-
-
   return (
     <>
       <div className="envio d-flex justify-content-center">

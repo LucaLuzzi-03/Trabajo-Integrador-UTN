@@ -7,7 +7,7 @@ import { Footer } from './components/Footer'
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
+      <Navbar/>
       <AppRouter />
       <Footer/>
     </BrowserRouter>

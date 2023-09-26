@@ -1,17 +1,17 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import { ProductCard } from '../components/ProductCard'
 import "./styles/destacados.css"
-import { useNavigate } from 'react-router-dom'
+
 import img1 from "../assets/imagen1.avif"
 import img2 from "../assets/imagen2.avif"
 import img3 from "../assets/imagen3.avif"
 
 
 export const Destacados = () => {
-
   const navigate = useNavigate()
-
   const [products, setProducts] = useState([])
 
   const getAllProducts = async() => { 

@@ -1,9 +1,4 @@
-import { Carousel } from '../components/Carousel'
-import { Destacados } from '../components/Destacados'
-import { Iconos } from '../components/Iconos'
-import {Footer} from '../components/Footer'
-
-
+import { Carousel, Destacados, Iconos } from '../components'
 
 export const Principal = () => {
   return (

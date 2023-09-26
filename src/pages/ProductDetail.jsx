@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 
 import './styles/productDetail.css'
-import { Footer } from "../components/Footer"
 
 
 export const ProductDetail = () => {

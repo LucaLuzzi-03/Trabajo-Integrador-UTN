@@ -1,4 +1,3 @@
-import React from 'react'
 import "./styles/footer.css"
 import visa from "../assets/visa-logo.png"
 import master from "../assets/masterlogo.png"

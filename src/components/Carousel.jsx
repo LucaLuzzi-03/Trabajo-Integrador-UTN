@@ -1,4 +1,3 @@
-import React from 'react'
 import "./styles/carousel.css"
 import banner1 from "../assets/banner1.png"
 import banner2 from "../assets/banner2.png"

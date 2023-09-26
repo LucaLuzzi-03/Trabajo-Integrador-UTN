@@ -1,11 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
-import { ProductCard } from '../components/ProductCard'
-import "./styles/productsPage.css"
-import { Filter } from '../components/Filter'
-import { Search } from '../components/Search'
-import { Pagination } from '../components/Pagination'
 
+import { ProductCard, Filter, Search, Pagination } from '../components'
+import "./styles/productsPage.css"
 
 
 export const ProductsPage = () => {
